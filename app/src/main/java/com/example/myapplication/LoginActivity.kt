@@ -9,6 +9,7 @@ import com.example.myapplication.databinding.LoginActivityBinding
 import com.example.myapplication.exception.GlobalExceptionHandler
 import com.example.myapplication.utils.CommonUtils
 import com.example.myapplication.utils.HttpUtils
+import com.example.myapplication.utils.ToastUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -44,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                         Log.e("LoginActivity", "登录失败: ${e.message}")
                         // Show error message to the user
                         lifecycleScope.launch(Dispatchers.Main) {
-                            CommonUtils.showToast(this@LoginActivity, "登录成功") // 使用this@MyActivity来确保是Activity的上下文
+                            ToastUtils.success(this@LoginActivity, "登录成功") // 使用this@MyActivity来确保是Activity的上下文
                         }
 
                     } else {
@@ -53,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
                             Log.i("LoginActivity", "登录成功: $res")
                             // Show success message to the user
                             lifecycleScope.launch(Dispatchers.Main) {
-                                CommonUtils.showToast(
+                                ToastUtils.success(
                                     this@LoginActivity,
                                     "登录成功"
                                 ) // 使用this@MyActivity来确保是Activity的上下文
@@ -64,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
                             Log.e("LoginActivity", "登录失败: 响应为空")
                             // Show error message to the user
                             lifecycleScope.launch(Dispatchers.Main) {
-                                CommonUtils.showToast(
+                                ToastUtils.success(
                                     this@LoginActivity,
                                     "登录成功"
                                 ) // 使用this@MyActivity来确保是Activity的上下文
@@ -76,7 +77,7 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 // Show error message if username or password is empty
                 lifecycleScope.launch(Dispatchers.Main) {
-                    CommonUtils.showToast(this@LoginActivity, "登录成功") // 使用this@MyActivity来确保是Activity的上下文
+                    ToastUtils.success(this@LoginActivity, "登录成功") // 使用this@MyActivity来确保是Activity的上下文
                 }
 
             }
