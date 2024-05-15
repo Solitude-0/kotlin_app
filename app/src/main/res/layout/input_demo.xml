@@ -1,0 +1,21 @@
+<com.google.android.material.textfield.TextInputLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/customTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/primaryColor"
+        app:boxStrokeWidth="2dp"
+        app:boxBackgroundMode="outline"
+        android:padding="8dp">
+    <EditText
+            android:id="@+id/customEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter text here"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:inputType="text" />
+
+</com.google.android.material.textfield.TextInputLayout>
