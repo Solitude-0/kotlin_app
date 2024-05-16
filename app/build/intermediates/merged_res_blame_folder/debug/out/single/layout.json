@@ -4,6 +4,10 @@
         "source": "com.example.myapplication.app-main-7:/layout/activity_main.xml"
     },
     {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/view_toast.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/view_toast.xml"
+    },
+    {
         "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/weicome.xml",
         "source": "com.example.myapplication.app-main-7:/layout/weicome.xml"
     },

@@ -9,6 +9,9 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable input_border
 drawable input_border_active
+drawable toast_error
+drawable toast_info
+drawable toast_success
 id FirstFragment
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
@@ -21,9 +24,12 @@ id nav_graph
 id password
 id textView
 id username
+id vt_icon
+id vt_message
 layout activity_main
 layout input_demo
 layout login_activity
+layout view_toast
 layout weicome
 mipmap ic_launcher
 mipmap ic_launcher_round

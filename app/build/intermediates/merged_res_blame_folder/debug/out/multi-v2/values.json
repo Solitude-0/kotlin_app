@@ -298,12 +298,12 @@
                 {
                     "source": "C:\\Users\\Administrator\\Desktop\\MyApplication\\app\\src\\main\\res\\values\\style.xml",
                     "from": {
-                        "startLines": "2,6",
+                        "startLines": "4,10",
                         "startColumns": "4,4",
-                        "startOffsets": "57,202",
-                        "endLines": "5,12",
+                        "startOffsets": "61,210",
+                        "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "196,540"
+                        "endOffsets": "200,548"
                     },
                     "to": {
                         "startLines": "5603,5607",

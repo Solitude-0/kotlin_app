@@ -3145,6 +3145,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable test_level_drawable
+drawable toast_error
+drawable toast_info
+drawable toast_success
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -3661,6 +3664,8 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id vt_icon
+id vt_message
 id west
 id withText
 id with_icon
@@ -3867,6 +3872,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout view_toast
 layout weicome
 mipmap ic_launcher
 mipmap ic_launcher_round

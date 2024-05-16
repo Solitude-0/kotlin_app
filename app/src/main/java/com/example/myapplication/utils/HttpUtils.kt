@@ -44,29 +44,24 @@ object HttpUtils {
     }
 
     private fun executeRequest(request: Request, callback: ((String?, Throwable?) -> Unit)?) {
-        // Log request URL
         Log.d("HttpUtils", "Request URL: ${request.url}")
-
-        // Log request method
         Log.d("HttpUtils", "Request Method: ${request.method}")
-
-        // Log request headers
         val headers = request.headers
         for (name in headers.names()) {
             Log.d("HttpUtils", "Request Header: $name: ${headers[name]}")
         }
-
-        // Log request body if present
         request.body?.let { requestBody ->
             Log.d("HttpUtils", "Request Body: ${requestBodyToString(requestBody)}")
         }
-
+        // 异步执行请求
         client.newCall(request).enqueue(object : Callback {
+            // http请求失败
             override fun onFailure(call: Call, e: IOException) {
                 Log.d("HttpUtils", "Request failed: $e")
                 callback?.invoke(null, e)
             }
 
+            // http响应成功
             override fun onResponse(call: Call, response: Response) {
                 val body = response.body?.string()
                 Log.d("HttpUtils", "Response: $body")
@@ -77,11 +72,11 @@ object HttpUtils {
 
     private fun requestBodyToString(requestBody: RequestBody): String {
         val buffer = Buffer()
-        try {
+        return try {
             requestBody.writeTo(buffer)
-            return buffer.readUtf8()
+            buffer.readUtf8()
         } catch (e: IOException) {
-            return "Unable to read request body"
+            "Unable to read request body"
         } finally {
             buffer.close()
         }
