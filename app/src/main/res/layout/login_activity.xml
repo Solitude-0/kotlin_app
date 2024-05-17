@@ -1,14 +1,13 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
         android:padding="16dp"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
->
+        android:orientation="vertical">
 
     <EditText
             android:id="@+id/username"
@@ -18,6 +17,7 @@
 
     />
 
+
     <EditText
             android:id="@+id/password"
             android:hint="@string/login_password_hint"
@@ -25,10 +25,20 @@
             android:layout_marginTop="20dp"
             style="@style/InputStyle"
     />
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            style="@style/RoundButton.Auto"
+            android:layout_marginTop="20dp"
+            android:text="默认圆角大小"
+
+    />
+
 
     <Button
             android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="登录"/>
+
+
 </LinearLayout>

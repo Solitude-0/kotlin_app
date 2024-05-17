@@ -1,118 +1,122 @@
 [
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\layout_common_loding.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\common_loding.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_toast_success.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/toast_success.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/xml/data_extraction_rules.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/layout_login_activity.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/layout/login_activity.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_toast_error.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\toast_error.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/ic_launcher_foreground.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\navigation_nav_graph.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_toast_error.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/toast_error.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_toast_info.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\toast_info.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\layout_main_activity.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\main_activity.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_input_border_active.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/input_border_active.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/navigation_nav_graph.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/navigation/nav_graph.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\layout_common_toast.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\common_toast.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_toast_info.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/toast_info.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/anim_scale_animation.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/anim/scale_animation.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\layout_login_activity.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\login_activity.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/ic_launcher_background.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_toast_success.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\toast_success.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/layout_view_toast.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/layout/view_toast.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_input_border_active.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\input_border_active.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/layout_input_demo.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/layout/input_demo.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\xml_backup_rules.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/xml_backup_rules.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/xml/backup_rules.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\anim_scale_animation.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\anim\\scale_animation.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/drawable_input_border.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/drawable/input_border.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\xml_network_security_config.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\xml\\network_security_config.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/layout_weicome.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/layout/weicome.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/layout_activity_main.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/layout/activity_main.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\drawable_input_border.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\drawable\\input_border.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/xml_network_security_config.xml.flat",
-        "source": "com.example.myapplication.app-main-7:/xml/network_security_config.xml"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myapplication.app-main-7:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-merged_res-5:\\layout_splash_activity.xml.flat",
+        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\splash_activity.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-5:/layout_main_activity.xml.flat",
+        "source": "com.example.myapplication.app-main-7:/layout/main_activity.xml"
     }
 ]

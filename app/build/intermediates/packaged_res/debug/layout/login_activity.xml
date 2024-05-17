@@ -18,6 +18,7 @@
 
     />
 
+
     <EditText
             android:id="@+id/password"
             android:hint="@string/login_password_hint"
@@ -25,7 +26,10 @@
             android:layout_marginTop="20dp"
             style="@style/InputStyle"
     />
-
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            style="@style/RoundButton.Auto"
+            android:layout_marginTop="20dp"
+            android:text="默认圆角大小" />
     <Button
             android:id="@+id/login_button"
             android:layout_width="wrap_content"

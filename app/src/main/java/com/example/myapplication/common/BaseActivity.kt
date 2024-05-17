@@ -7,6 +7,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
 import com.example.myapplication.enums.ToastType
 import com.example.myapplication.utils.ToastUtils
+import com.xuexiang.xui.XUI
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
@@ -19,6 +20,7 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        XUI.initTheme(this)
         // 初始化ViewBinding
         binding = onCreateViewBinding()
         setContentView(binding.root)

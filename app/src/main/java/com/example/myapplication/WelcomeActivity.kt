@@ -5,19 +5,17 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.databinding.WeicomeBinding
-import com.example.myapplication.exception.GlobalExceptionHandler
+import com.example.myapplication.databinding.SplashActivityBinding
 import java.lang.ref.WeakReference
 
 class WelcomeActivity : AppCompatActivity() {
 
     private var handler: Handler? = null
-    private lateinit var binding: WeicomeBinding
+    private lateinit var binding: SplashActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = WeicomeBinding.inflate(layoutInflater)
+        binding = SplashActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         // Initialize handler with the main looper
         handler = MyHandler(this)
@@ -27,7 +25,7 @@ class WelcomeActivity : AppCompatActivity() {
             // Perform background tasks here
             // For example, sending messages to handler
             // For demonstration, sending a message after 3 seconds
-            Thread.sleep(3000)
+            Thread.sleep(2000)
             handler?.sendEmptyMessage(0)
         })
         thread.start()

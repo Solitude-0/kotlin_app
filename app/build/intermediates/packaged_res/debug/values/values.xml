@@ -42,7 +42,11 @@
     <string name="previous">Previous</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="title_activity_main2">MainActivity2</string>
-    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="AppTheme" parent="XUITheme.Phone">
+        
+
+    </style>
+    <style name="Base.Theme.MyApplication" parent="AppTheme">
         
         
     </style>
@@ -57,5 +61,5 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
+    <style name="Theme.MyApplication" parent="AppTheme"/>
 </resources>

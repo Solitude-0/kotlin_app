@@ -22,21 +22,19 @@ object ToastUtils {
 
     @SuppressLint("InflateParams")
     private fun getToast(context: Context, message: String, type: ToastType) {
-
         if (currentToast != null) {
             currentToast?.cancel()
         }
         currentToast = Toast(context)
-        currentToast!!.duration = Toast.LENGTH_LONG
+        currentToast!!.duration = Toast.LENGTH_SHORT
         currentToast!!.setGravity(Gravity.TOP, 0, 0)
-        val toastLayout = LayoutInflater.from(context).inflate(R.layout.view_toast, null)
+        val toastLayout = LayoutInflater.from(context).inflate(R.layout.common_toast, null)
         val textView = toastLayout.findViewById<TextView>(R.id.vt_message)
         textView.text = message
         // 根据ToastType设置背景
         textView.setBackground(type)
         currentToast!!.setView(toastLayout)
         currentToast!!.show()
-
     }
 
     private fun TextView.setBackground(type: ToastType) {
