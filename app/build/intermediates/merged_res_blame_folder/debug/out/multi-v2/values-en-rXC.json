@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myapplication.app-mergeDebugResources-3:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.myapplication.app-mergeDebugResources-52:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "G:\\android\\repository2\\caches\\transforms-3\\b4d9602d0dce54bc731723f70df199a9\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "E:\\gradle\\caches\\transforms-3\\b4d9602d0dce54bc731723f70df199a9\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "G:\\android\\repository2\\caches\\transforms-3\\fec85a65fa2bc32cc621aeef50063433\\transformed\\core-1.13.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "E:\\gradle\\caches\\transforms-3\\fec85a65fa2bc32cc621aeef50063433\\transformed\\core-1.13.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

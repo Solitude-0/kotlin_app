@@ -1,26 +1,22 @@
 [
     {
-        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-4:\\layout\\common_loding.xml",
-        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\common_loding.xml"
+        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/main_activity.xml",
+        "source": "com.example.myapplication.app-main-56:/layout/main_activity.xml"
     },
     {
-        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-4:\\layout\\splash_activity.xml",
-        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\splash_activity.xml"
+        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/splash_activity.xml",
+        "source": "com.example.myapplication.app-main-56:/layout/splash_activity.xml"
     },
     {
-        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-4:\\layout\\login_activity.xml",
-        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\login_activity.xml"
+        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/common_toast.xml",
+        "source": "com.example.myapplication.app-main-56:/layout/common_toast.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/main_activity.xml",
-        "source": "com.example.myapplication.app-main-7:/layout/main_activity.xml"
+        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/login_activity.xml",
+        "source": "com.example.myapplication.app-main-56:/layout/login_activity.xml"
     },
     {
-        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-4:\\layout\\main_activity.xml",
-        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\main_activity.xml"
-    },
-    {
-        "merged": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-4:\\layout\\common_toast.xml",
-        "source": "G:\\android\\repository2\\daemon\\7.5\\com.example.myapplication.app-main-7:\\layout\\common_toast.xml"
+        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/common_loding.xml",
+        "source": "com.example.myapplication.app-main-56:/layout/common_loding.xml"
     }
 ]
