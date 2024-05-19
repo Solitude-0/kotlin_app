@@ -5488,6 +5488,7 @@ int id south 0x7f090257
 int id spacer 0x7f090258
 int id special_effects_controller_view_tag 0x7f090259
 int id spinner_item 0x7f09025a
+int id splash_text 0x7f0902e8
 int id spline 0x7f09025b
 int id split_action_bar 0x7f09025c
 int id spread 0x7f09025d

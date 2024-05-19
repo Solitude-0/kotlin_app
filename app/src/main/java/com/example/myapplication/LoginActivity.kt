@@ -10,6 +10,7 @@ import com.example.myapplication.databinding.LoginActivityBinding
 import com.example.myapplication.exception.GlobalExceptionHandler
 import com.example.myapplication.utils.HttpUtils
 import com.example.myapplication.utils.LoadingUtils
+import com.example.myapplication.utils.SpUtils
 import com.example.myapplication.utils.ToastUtils
 import com.xuexiang.xui.XUI
 import com.xuexiang.xui.widget.dialog.LoadingDialog
@@ -53,6 +54,7 @@ class LoginActivity : BaseActivity<LoginActivityBinding>() {
 
     private fun login(hashMap: java.util.HashMap<String, String>) {
         HttpUtils.post(ApiConstant.LOGIN, JSON.toJSONString(hashMap)) { res, e ->
+            SpUtils.setValue(this@LoginActivity.applicationContext,"loginUserName","aaaa")
             LoadingUtils.cancel()
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
             startActivity(intent)

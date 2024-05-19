@@ -4,6 +4,10 @@
         "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\anim\\scale_animation.xml"
     },
     {
+        "merged": "com.example.myapplication.app-merged_res-54:/layout_splash_activity.xml.flat",
+        "source": "com.example.myapplication.app-main-56:/layout/splash_activity.xml"
+    },
+    {
         "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-54:\\layout_splash_activity.xml.flat",
         "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\splash_activity.xml"
     },
@@ -32,10 +36,6 @@
         "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\login_activity.xml"
     },
     {
-        "merged": "com.example.myapplication.app-merged_res-54:/layout_fragment_my.xml.flat",
-        "source": "com.example.myapplication.app-main-56:/layout/fragment_my.xml"
-    },
-    {
         "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-54:\\layout_common_loding.xml.flat",
         "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\common_loding.xml"
     },
@@ -62,10 +62,6 @@
     {
         "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-54:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.myapplication.app-merged_res-54:/layout_main_activity.xml.flat",
-        "source": "com.example.myapplication.app-main-56:/layout/main_activity.xml"
     },
     {
         "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-merged_res-54:\\mipmap-xxxhdpi_ic_launcher.webp.flat",

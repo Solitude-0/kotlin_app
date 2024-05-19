@@ -7,6 +7,7 @@ import android.os.Looper
 import android.os.Message
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.SplashActivityBinding
+import com.example.myapplication.utils.SpUtils
 import java.lang.ref.WeakReference
 
 class WelcomeActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = SplashActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.splashText.text=SpUtils.getValue("loginUserName")
         // Initialize handler with the main looper
         handler = MyHandler(this)
 

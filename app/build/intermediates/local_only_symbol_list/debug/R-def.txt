@@ -22,6 +22,7 @@ id navigation_dashboard
 id navigation_home
 id navigation_notifications
 id password
+id splash_text
 id username
 id vt_icon
 id vt_message

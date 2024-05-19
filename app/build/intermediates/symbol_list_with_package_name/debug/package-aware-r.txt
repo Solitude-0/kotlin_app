@@ -5489,6 +5489,7 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinner_item
+id splash_text
 id spline
 id split_action_bar
 id spread
