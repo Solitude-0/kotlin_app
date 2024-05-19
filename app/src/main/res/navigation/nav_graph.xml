@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/nav_graph"
-            app:startDestination="@id/FirstFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
 
     <fragment
-            android:id="@+id/FirstFragment"
-            android:name="com.example.myapplication.FirstFragment"
-            android:label="@string/first_fragment_label"
-            tools:layout="@layout/fragment_first">
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.fragment.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home"/>
 
-        <action
-                android:id="@+id/action_FirstFragment_to_SecondFragment"
-                app:destination="@id/SecondFragment"/>
-    </fragment>
     <fragment
-            android:id="@+id/SecondFragment"
-            android:name="com.example.myapplication.SecondFragment"
-            android:label="@string/second_fragment_label"
-            tools:layout="@layout/fragment_second">
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.fragment.FunFragment"
+        android:label="业务"
+        tools:layout="@layout/fragment_fun"/>
 
-        <action
-                android:id="@+id/action_SecondFragment_to_FirstFragment"
-                app:destination="@id/FirstFragment"/>
-    </fragment>
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.fragment.MyFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_my"/>
 </navigation>

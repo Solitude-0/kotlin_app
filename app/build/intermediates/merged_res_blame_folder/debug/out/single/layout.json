@@ -1,22 +1,42 @@
 [
     {
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\fragment_my.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\fragment_my.xml"
+    },
+    {
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\common_toast.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\common_toast.xml"
+    },
+    {
         "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/main_activity.xml",
         "source": "com.example.myapplication.app-main-56:/layout/main_activity.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/splash_activity.xml",
-        "source": "com.example.myapplication.app-main-56:/layout/splash_activity.xml"
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\fragment_fun.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\fragment_fun.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/common_toast.xml",
-        "source": "com.example.myapplication.app-main-56:/layout/common_toast.xml"
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\login_activity.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\login_activity.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/login_activity.xml",
-        "source": "com.example.myapplication.app-main-56:/layout/login_activity.xml"
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\fragment_home.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/common_loding.xml",
-        "source": "com.example.myapplication.app-main-56:/layout/common_loding.xml"
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\main_activity.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-53:/layout/fragment_my.xml",
+        "source": "com.example.myapplication.app-main-56:/layout/fragment_my.xml"
+    },
+    {
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\splash_activity.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\splash_activity.xml"
+    },
+    {
+        "merged": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-mergeDebugResources-53:\\layout\\common_loding.xml",
+        "source": "E:\\gradle\\daemon\\7.5\\com.example.myapplication.app-main-56:\\layout\\common_loding.xml"
     }
 ]

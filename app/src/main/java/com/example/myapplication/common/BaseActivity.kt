@@ -20,7 +20,6 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        XUI.initTheme(this)
         // 初始化ViewBinding
         binding = onCreateViewBinding()
         setContentView(binding.root)
