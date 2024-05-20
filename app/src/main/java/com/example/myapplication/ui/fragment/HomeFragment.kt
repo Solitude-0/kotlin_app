@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapplication.databinding.FragmentHomeBinding
-import com.example.myapplication.utils.SpUtils
+import com.example.myapplication.common.utils.SpUtils
 
 class HomeFragment : Fragment() {
 
@@ -19,13 +19,8 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-//        val homeViewModel =
-//            ViewModelProvider(this).get(HomeViewModel::class.java)
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         binding.homeText.text = SpUtils.getValue("loginUserName")
-
-
         return binding.root
     }
 

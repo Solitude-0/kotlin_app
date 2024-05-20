@@ -8,7 +8,7 @@ import android.os.Message
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.SplashActivityBinding
-import com.example.myapplication.utils.SpUtils
+import com.example.myapplication.common.utils.SpUtils
 import java.lang.ref.WeakReference
 
 class WelcomeActivity : AppCompatActivity() {
@@ -19,19 +19,12 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = SplashActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.splashText.text=SpUtils.getValue("loginUserName")
+        binding.splashText.text= SpUtils.getValue("loginUserName")
 
         println(SpUtils.getValue("loginUserName"))
         SpUtils.getValue("loginUserName")?.let { Log.i("拿到的缓存", it) }
-
-
         handler = MyHandler(this)
-
-        // Create and start the thread
         val thread = Thread(Runnable {
-            // Perform background tasks here
-            // For example, sending messages to handler
-            // For demonstration, sending a message after 3 seconds
             Thread.sleep(2000)
             handler?.sendEmptyMessage(0)
         })

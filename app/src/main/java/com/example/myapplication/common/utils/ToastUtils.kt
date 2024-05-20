@@ -1,4 +1,4 @@
-package com.example.myapplication.utils
+package com.example.myapplication.common.utils
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.widget.TextView
 import android.widget.Toast
 import com.example.myapplication.R
-import com.example.myapplication.enums.ToastType
+import com.example.myapplication.common.enums.ToastType
 
 object ToastUtils {
 

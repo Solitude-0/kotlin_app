@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val navView: BottomNavigationView = binding.navView
@@ -39,13 +38,12 @@ class MainActivity : AppCompatActivity() {
                     loadFragment(MyFragment())
                     true
                 }
-
                 else -> {
                  false
                 }
             }
         }
-        actionBar?.hide()
+//        actionBar?.hide()
     }
 
     private fun loadFragment(fragment: Fragment) {
