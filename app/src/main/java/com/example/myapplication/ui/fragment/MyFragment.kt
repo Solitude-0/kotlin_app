@@ -21,10 +21,7 @@ class MyFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentMyBinding.inflate(inflater, container, false)
-
-
         return binding.root
     }
 

@@ -1,4 +1,4 @@
-package com.example.myapplication.interceptor
+package com.example.myapplication.common.interceptor
 
 import okhttp3.Interceptor
 import okhttp3.Response
