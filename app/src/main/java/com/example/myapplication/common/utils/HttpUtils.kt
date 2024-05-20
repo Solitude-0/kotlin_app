@@ -21,16 +21,16 @@ object HttpUtils {
         .addInterceptor(ResponseInterceptor())
         .build()
 
-    fun <T> get(url: String, params: Map<String, String>? = null, clazz: Class<T>) {
+    fun <T> get(url: String, params: Map<String, String>? = null, clazz: Class<T>): ApiResponse<T>?  {
         val fullUrl = buildFullUrl(url, params)
         val request = Request.Builder()
             .url(fullUrl)
             .get()
             .build()
-        executeRequest(request, clazz)
+        return executeRequest(request, clazz)
     }
 
-    fun <T> post(url: String, params: String?, clazz: Class<T>) {
+    fun <T> post(url: String, params: String?, clazz: Class<T>): ApiResponse<T>? {
         val requestBody = params?.toRequestBody("application/json".toMediaTypeOrNull())
         val request = requestBody?.let {
             Request.Builder()
@@ -38,9 +38,7 @@ object HttpUtils {
                 .post(it)
                 .build()
         }
-        if (request != null) {
-            executeRequest(request, clazz)
-        }
+        return request?.let { executeRequest(it, clazz) }
     }
 
 
@@ -57,6 +55,7 @@ object HttpUtils {
         val response: Response = client.newCall(request).execute()
         if (response.isSuccessful) {
             val responseBody = response.body?.string()
+            Log.d("HttpUtils", "Response Body: $responseBody")
             if (responseBody != null) {
                 return ApiResponse.parse(responseBody, clazz)
             } else {

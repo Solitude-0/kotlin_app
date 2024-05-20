@@ -19,10 +19,10 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = SplashActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.splashText.text= SpUtils.getValue("loginUserName")
+        binding.splashText.text= SpUtils.getValue(this@WelcomeActivity.applicationContext,"loginUserName")
 
-        println(SpUtils.getValue("loginUserName"))
-        SpUtils.getValue("loginUserName")?.let { Log.i("拿到的缓存", it) }
+        println(SpUtils.getValue(this@WelcomeActivity.applicationContext,"loginUserName"))
+        SpUtils.getValue(this@WelcomeActivity.applicationContext,"loginUserName")?.let { Log.i("拿到的缓存", it) }
         handler = MyHandler(this)
         val thread = Thread(Runnable {
             Thread.sleep(2000)

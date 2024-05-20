@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        binding.homeText.text = SpUtils.getValue("loginUserName")
+        binding.homeText.text = this@HomeFragment.context?.let { SpUtils.getValue(it,"username") }
         return binding.root
     }
 

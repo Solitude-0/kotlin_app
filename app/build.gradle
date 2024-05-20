@@ -35,10 +35,10 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.code.gson:gson:2.8.9' // 使用适合您的版本
+    implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.github.xuexiangjys:XUI:1.2.1'
     implementation 'com.alibaba:fastjson:1.2.83'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'// 使用你需要的版本号
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.12.0'

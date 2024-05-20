@@ -12,7 +12,6 @@ data class ApiResponse<T>(
     fun isSuccessful(): Boolean {
         return code in 200..299
     }
-
     companion object {
         private val gson = Gson()
         fun <T> success(data: T): ApiResponse<T> {

@@ -12,7 +12,7 @@ import kotlinx.coroutines.Job
 
 abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
-    lateinit var binding: VB
+    private lateinit var binding: VB
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // 初始化ViewBinding
@@ -22,8 +22,5 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
     }
     protected abstract fun onCreateViewBinding(): VB
     protected open fun initView(binding: VB) {}
-    override fun onDestroy() {
-        super.onDestroy()
-    }
 
 }
