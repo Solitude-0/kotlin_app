@@ -22,9 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         val navView: BottomNavigationView = binding.navView
-
         // 定义监听器 进行页面的切换
         loadFragment(HomeFragment())
         navView.setOnItemSelectedListener {item->

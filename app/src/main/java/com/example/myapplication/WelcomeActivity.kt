@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.SplashActivityBinding
 import com.example.myapplication.utils.SpUtils
@@ -19,7 +20,11 @@ class WelcomeActivity : AppCompatActivity() {
         binding = SplashActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.splashText.text=SpUtils.getValue("loginUserName")
-        // Initialize handler with the main looper
+
+        println(SpUtils.getValue("loginUserName"))
+        SpUtils.getValue("loginUserName")?.let { Log.i("拿到的缓存", it) }
+
+
         handler = MyHandler(this)
 
         // Create and start the thread
