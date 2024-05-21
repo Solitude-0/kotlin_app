@@ -31,7 +31,6 @@ object ToastUtils {
         val toastLayout = LayoutInflater.from(context).inflate(R.layout.common_toast, null)
         val textView = toastLayout.findViewById<TextView>(R.id.vt_message)
         textView.text = message
-        // 根据ToastType设置背景
         textView.setBackground(type)
         currentToast!!.setView(toastLayout)
         currentToast!!.show()

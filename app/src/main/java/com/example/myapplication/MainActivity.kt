@@ -24,26 +24,28 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.navView
         // 定义监听器 进行页面的切换
         loadFragment(HomeFragment())
-        navView.setOnItemSelectedListener {item->
+        navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
                     loadFragment(HomeFragment())
-                     true
+                    true
                 }
+
                 R.id.navigation_dashboard -> {
                     loadFragment(FunFragment())
                     true
                 }
+
                 R.id.navigation_notifications -> {
                     loadFragment(MyFragment())
                     true
                 }
+
                 else -> {
-                 false
+                    false
                 }
             }
         }
-//        actionBar?.hide()
     }
 
     private fun loadFragment(fragment: Fragment) {
