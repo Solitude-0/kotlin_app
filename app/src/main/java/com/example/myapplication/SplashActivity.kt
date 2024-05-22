@@ -1,8 +1,11 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Handler
 import android.os.Looper
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
 import com.example.myapplication.common.BaseActivity
@@ -21,6 +24,9 @@ class SplashActivity : BaseActivity<SplashActivityBinding, LoginViewModel>(Login
     }
 
     override fun initView(binding: SplashActivityBinding) {
+        val window = window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor = Color.TRANSPARENT
         binding.splashText.text = SpUtils.getValue(application, "username")
     }
 

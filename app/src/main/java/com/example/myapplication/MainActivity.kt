@@ -1,28 +1,35 @@
 package com.example.myapplication
 
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import androidx.lifecycle.ViewModel
+import com.example.myapplication.common.BaseActivity
+import com.example.myapplication.databinding.LoginActivityBinding
 import com.example.myapplication.databinding.MainActivityBinding
+import com.example.myapplication.model.LoginViewModel
 import com.example.myapplication.ui.fragment.FunFragment
 import com.example.myapplication.ui.fragment.HomeFragment
 import com.example.myapplication.ui.fragment.MyFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<MainActivityBinding, LoginViewModel>(LoginViewModel::class) {
 
-    private lateinit var binding: MainActivityBinding
+    override fun onCreateViewBinding(): MainActivityBinding {
+        return MainActivityBinding.inflate(layoutInflater)
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = MainActivityBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun initData(binding: MainActivityBinding) {
+        val window = window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor = Color.TRANSPARENT
         val navView: BottomNavigationView = binding.navView
-        // 定义监听器 进行页面的切换
         loadFragment(HomeFragment())
         navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -53,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.replace(R.id.fragment_container, fragment)
         fragmentTransaction.commit()
     }
+
 }
 
 

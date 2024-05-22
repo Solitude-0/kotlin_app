@@ -16,6 +16,7 @@ import kotlinx.coroutines.withContext
 
 
 class LoginViewModel(application: Application) : AndroidViewModel(application) {
+
     private var loginBody: MutableLiveData<LoginBody> = MutableLiveData()
     fun getLoginBody(): MutableLiveData<LoginBody> {
         return loginBody;
@@ -27,7 +28,6 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             Log.d("response", "Response Body: $response")
             SpUtils.setValue(getApplication<Application>().applicationContext, "username", username)
             SpUtils.setValue(getApplication<Application>().applicationContext, "password", password)
-            //执行其他业务逻辑
             true
         } catch (e: Exception) {
             e.printStackTrace()

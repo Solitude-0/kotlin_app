@@ -1,11 +1,15 @@
 package com.example.myapplication.common
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
+import com.example.myapplication.R
 import com.example.myapplication.exception.GlobalExceptionHandler
 import com.example.myapplication.model.LoginViewModel
 
@@ -17,7 +21,7 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>(
 ) : AppCompatActivity() {
 
     private lateinit var binding: VB
-    lateinit var viewModel: VM  // 声明为protected允许子类访问
+    lateinit var viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +29,11 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>(
         binding = onCreateViewBinding()
         viewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory(application))[vmClass.java]
         setContentView(binding.root)
-        initData(binding)
+        val window = window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor = ContextCompat.getColor(this, com.xuexiang.xui.R.color.xui_config_color_titlebar)
         initView(binding)
+        initData(binding)
     }
 
     protected abstract fun onCreateViewBinding(): VB
