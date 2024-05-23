@@ -9,42 +9,42 @@
       </config>
     </shared>
     <layouts>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/common_loding.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity/layout/login_activity.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/common_toast.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity/layout/main_activity.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fun.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity/layout/splash_activity.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/common/layout/common_loding.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_my.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/common/layout/common_toast.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment/layout/fragment_fun.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment/layout/fragment_home.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/splash_activity.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment/layout/fragment_my.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
@@ -68,14 +68,16 @@
     <list default="true" id="8a8c468b-cc31-49dd-9aaa-aa749b2a704b" name="Changes" comment="1212">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/LoginActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/WelcomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/WelcomeActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/common/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/common/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/common/utils/HttpUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/common/utils/HttpUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/common/utils/SpUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/common/utils/SpUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/domain/ApiResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/domain/ApiResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/model/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/model/LoginViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/fragment/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/common_loding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/common/layout/common_loding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/common_toast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/common/layout/common_toast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment/layout/fragment_fun.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment/layout/fragment_my.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ui/layout/item_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity/layout/login_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity/layout/main_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity/layout/splash_activity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +178,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "C:/Users/Administrator/Desktop/MyApplication",
-    "memory.settings.postsync.last.time.stamp": "1716212923452",
+    "memory.settings.postsync.last.time.stamp": "1716475885868",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -204,9 +206,11 @@
       <recent name="C:\Users\Administrator\Desktop\MyApplication\app\src\main\java\com\example\myapplication" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\MyApplication\app\src\main\res\values" />
-      <recent name="C:\Users\Administrator\Desktop\MyApplication\app\src\main\res\layout" />
-      <recent name="C:\Users\Administrator\Desktop\MyApplication\app\src\main\res\component" />
+      <recent name="F:\projects\appProjects\kotlin_app\app\src\main\res\layout\ui\layout" />
+      <recent name="F:\projects\appProjects\kotlin_app\app\src\main\res\layout\fragment\layout" />
+      <recent name="F:\projects\appProjects\kotlin_app\app\src\main\res\layout\common\layout" />
+      <recent name="F:\projects\appProjects\kotlin_app\app\src\main\res\layout\activity\layout" />
+      <recent name="F:\projects\appProjects\kotlin_app\app\src\main\res\layout\ui" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.myapplication.interceptor" />
@@ -480,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716211120609</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1212">
+      <option name="closed" value="true" />
+      <created>1716217234293</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716217234293</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
