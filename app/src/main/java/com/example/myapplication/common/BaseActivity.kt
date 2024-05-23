@@ -20,7 +20,7 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>(
     private val vmClass: KClass<VM>
 ) : AppCompatActivity() {
 
-    private lateinit var binding: VB
+    lateinit var binding: VB
     lateinit var viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,8 +30,10 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>(
         viewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory(application))[vmClass.java]
         setContentView(binding.root)
         val window = window
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = ContextCompat.getColor(this, com.xuexiang.xui.R.color.xui_config_color_titlebar)
+
         initView(binding)
         initData(binding)
     }

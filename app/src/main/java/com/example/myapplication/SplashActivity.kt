@@ -33,7 +33,7 @@ class SplashActivity : BaseActivity<SplashActivityBinding, LoginViewModel>(Login
     override fun initData(binding: SplashActivityBinding) {
         val username = SpUtils.getValue(application, "username")
         val password = SpUtils.getValue(application, "password")
-        if (username.isNotEmpty() && password.isNotEmpty()) {
+        if (username.isNotEmpty() && password.isNotEmpty() && username == "login") {
             lifecycleScope.launch {
                 val success = viewModel.login(username, password)
                 if (success) {
