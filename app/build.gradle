@@ -31,7 +31,7 @@ android {
         dataBinding true
     }
     sourceSets {
-        getByName("main"){
+        getByName("main") {
             res.srcDirs(
                     "src/main/res/layout/common",
                     "src/main/res/layout/ui",
@@ -45,6 +45,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.squareup.picasso:picasso:2.8'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.github.xuexiangjys:XUI:1.2.1'

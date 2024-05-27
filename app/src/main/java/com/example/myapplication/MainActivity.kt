@@ -14,15 +14,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : BaseActivity<MainActivityBinding, LoginViewModel>(LoginViewModel::class) {
-    private lateinit var viewPager: ViewPager2;
     private lateinit var bottomNavigationView: BottomNavigationView;
     override fun onCreateViewBinding(): MainActivityBinding {
         return MainActivityBinding.inflate(layoutInflater)
     }
 
     override fun initView(binding: MainActivityBinding) {
-
-//        viewPager = findViewById(R.id.viewPager);
+;
         bottomNavigationView = binding.navView
     }
 
@@ -77,8 +75,8 @@ class MainActivity : BaseActivity<MainActivityBinding, LoginViewModel>(LoginView
     private fun loadFragment(fragment: Fragment, title: CharSequence?) {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragment_container, fragment)
-        binding.titleBar.setTitle(title)
-        binding.titleBar.setLeftVisible(false)
+//        binding.titleBar.setTitle(title)
+//        binding.titleBar.setLeftVisible(false)
         fragmentTransaction.commit()
     }
 

@@ -2,9 +2,14 @@ package com.example.myapplication
 
 import android.annotation.SuppressLint
 import android.graphics.Color
+import android.os.Build
 import android.os.Handler
 import android.os.Looper
+import android.view.View
+import android.view.WindowInsets
+import android.view.WindowInsetsController
 import android.view.WindowManager
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
@@ -23,10 +28,10 @@ class SplashActivity : BaseActivity<SplashActivityBinding, LoginViewModel>(Login
         return SplashActivityBinding.inflate(layoutInflater)
     }
 
+    @RequiresApi(Build.VERSION_CODES.S)
     override fun initView(binding: SplashActivityBinding) {
-        val window = window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        window.statusBarColor = Color.TRANSPARENT
+
+
         binding.splashText.text = SpUtils.getValue(application, "username")
     }
 
@@ -46,7 +51,6 @@ class SplashActivity : BaseActivity<SplashActivityBinding, LoginViewModel>(Login
         }
     }
 
-    @SuppressLint("HandlerLeak")
     inner class ToLoginActivityHandle(activity: SplashActivity) : Handler(Looper.getMainLooper()) {
         private var activity: WeakReference<SplashActivity> = WeakReference(activity)
         override fun handleMessage(msg: android.os.Message) {

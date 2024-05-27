@@ -3,16 +3,22 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               tools:context=".ui.fragment.HomeFragment">
 
-
-    <TextView
-            android:id="@+id/home_text"
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/black"
-            android:text="2"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="com.xuexiang.xui.adapter.recyclerview.XLinearLayoutManager"
+    />
+    <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="获取数据"/>
 
 </LinearLayout>

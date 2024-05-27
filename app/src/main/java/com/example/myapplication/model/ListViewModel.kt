@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.myapplication.domain.Content
 import com.example.myapplication.domain.ItemDemo
 
 
@@ -26,11 +27,21 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
                 ItemDemo("10")
             )
         }
+    }
 
-
+    fun getList() {
+        _users2.value = listOf(
+            Content("1", null),
+            Content("2", null),
+            Content("3", null),
+            Content("4", null),
+            Content("5", null)
+        )
     }
 
     private val _users = MutableLiveData<List<ItemDemo>>()
-    val demo: LiveData<List<ItemDemo>> = _users
+    private val _users2 = MutableLiveData<List<Content>>()
 
+    val demo: LiveData<List<ItemDemo>> = _users
+    val demo2: LiveData<List<Content>> = _users2
 }

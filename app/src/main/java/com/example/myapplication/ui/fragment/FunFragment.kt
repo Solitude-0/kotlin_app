@@ -1,11 +1,12 @@
 package com.example.myapplication.ui.fragment
 
-import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
+import com.example.myapplication.adapter.ContentListAdapter
+import com.example.myapplication.common.BaseFragment
 import com.example.myapplication.databinding.FragmentFunBinding
+import com.example.myapplication.model.ListViewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,18 +18,27 @@ private const val ARG_PARAM2 = "param2"
  * Use the [FunFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FunFragment : Fragment() {
-    private var _binding: FragmentFunBinding? = null
-    private val binding get() = _binding!!
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+class FunFragment : BaseFragment<FragmentFunBinding, ListViewModel>() {
 
-        _binding = FragmentFunBinding.inflate(inflater, container, false)
+    private lateinit var adapter: ContentListAdapter
+    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentFunBinding
+        get() = FragmentFunBinding::inflate
+    override val viewModelClass: Class<ListViewModel>
+        get() = ListViewModel::class.java
 
 
-        return binding.root
+    override fun initEvent(binding: FragmentFunBinding) {
+        adapter = ContentListAdapter()
+        binding.recyclerView.adapter = adapter
+    }
+
+    override fun initObserve(viewModel: ListViewModel) {
+        viewModel.demo2.observe(viewLifecycleOwner) { dataList ->
+            adapter.submitList(dataList)
+        }
+    }
+
+    override fun initData(viewModel: ListViewModel) {
+        viewModel.getList()
     }
 }

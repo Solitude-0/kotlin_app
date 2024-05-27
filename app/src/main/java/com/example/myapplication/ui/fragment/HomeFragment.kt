@@ -29,9 +29,9 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         binding.recyclerView.adapter = adapter
         viewModel.demo.observe(viewLifecycleOwner) { dataList ->
-            // 当数据变化时，更新适配器
             adapter.submitList(dataList)
         }
+
         binding.loginButton.setOnClickListener {
             viewModel.getDataList(2)
         }
