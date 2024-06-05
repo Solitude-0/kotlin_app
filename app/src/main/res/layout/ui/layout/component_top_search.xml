@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="139dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:gravity="center_horizontal">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+
+        <!-- 左侧固定内容 -->
+        <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:src="@drawable/logo"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        <!-- 搜索框 -->
+        <include
+                layout="@layout/component_search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        <!-- 右侧固定内容 -->
+        <ImageView
+                android:id="@+id/logoImageView2"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:src="@drawable/logo"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.tabbar.EasyIndicator
+                android:id="@+id/easy_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:indicator_bottom_height="3dp"
+                app:indicator_height="42dp"
+                app:indicator_isBottom_line="true"
+                app:indicator_textSize="14sp"
+                app:indicator_width="0dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

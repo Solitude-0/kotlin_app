@@ -18,9 +18,9 @@ class LoginActivity : BaseActivity<LoginActivityBinding, LoginViewModel>(LoginVi
     }
 
     override fun initView(binding: LoginActivityBinding) {
-        binding.password.setOnFocusChangeListener { view, hasFocus ->
-            view.setBackgroundResource(if (hasFocus) R.drawable.input_border_active else R.drawable.input_border)
-        }
+//        binding.password.setOnFocusChangeListener { view, hasFocus ->
+//            view.setBackgroundResource(if (hasFocus) R.drawable.input_border_active else R.drawable.input_border)
+//        }
         binding.loginButton.setOnClickListener {
             LoadingUtils.show(this)
             lifecycleScope.launch {
@@ -29,7 +29,7 @@ class LoginActivity : BaseActivity<LoginActivityBinding, LoginViewModel>(LoginVi
                 if (success) {
                     navigateToActivity(MainActivity::class.java)
                 } else {
-                    ToastUtils.error(application, "登录失败")
+                    ToastUtils.error(this@LoginActivity, "登录失败")
                 }
 
             }

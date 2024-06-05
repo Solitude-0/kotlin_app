@@ -21,7 +21,7 @@ object HttpUtils {
         .addInterceptor(ResponseInterceptor())
         .build()
 
-    fun <T> get(url: String, params: Map<String, String>? = null, clazz: Class<T>): ApiResponse<T>?  {
+    fun <T> get(url: String, params: Map<String, String>? = null, clazz: Class<T>): ApiResponse<T>? {
         val fullUrl = buildFullUrl(url, params)
         val request = Request.Builder()
             .url(fullUrl)
@@ -42,28 +42,32 @@ object HttpUtils {
     }
 
 
-    private fun <T> executeRequest(request: Request, clazz: Class<T>): ApiResponse<T>? {
+    private fun <T> executeRequest(request: Request, clazz: Class<T>): ApiResponse<T> {
         Log.d("HttpUtils", "Request URL: ${request.url}")
         Log.d("HttpUtils", "Request Method: ${request.method}")
-        val headers = request.headers
-        for (name in headers.names()) {
-            Log.d("HttpUtils", "Request Header: $name: ${headers[name]}")
+        request.headers.names().forEach { name ->
+            Log.d("HttpUtils", "Request Header: $name: ${request.headers[name]}")
         }
         request.body?.let { requestBody ->
             Log.d("HttpUtils", "Request Body: ${requestBodyToString(requestBody)}")
         }
-        val response: Response = client.newCall(request).execute()
-        if (response.isSuccessful) {
-            val responseBody = response.body?.string()
-            Log.d("HttpUtils", "Response Body: $responseBody")
-            if (responseBody != null) {
-                return ApiResponse.parse(responseBody, clazz)
+        try {
+            val response: Response = client.newCall(request).execute()
+            return if (response.isSuccessful) {
+                val responseBody = response.body?.string()
+                Log.d("HttpUtils", "Response Body: $responseBody")
+                responseBody?.let { ApiResponse.parse(it, clazz) } ?: ApiResponse.error(
+                    response.code,
+                    response.message
+                )
             } else {
-                // 如果响应失败，返回错误信息
-                return ApiResponse.error(response.code, response.message)
+                Log.e("HttpUtils", "Request failed: ${response.code} - ${response.message}")
+                ApiResponse.error(response.code, response.message)
             }
+        } catch (e: Exception) {
+            Log.e("HttpUtils", "Request failed: ${e.message}")
+            return ApiResponse.error(400, "请求失败")
         }
-        return ApiResponse.error(response.code, "请求失败")
     }
 
 

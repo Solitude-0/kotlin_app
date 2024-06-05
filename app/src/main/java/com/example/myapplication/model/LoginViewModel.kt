@@ -35,5 +35,4 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-
 }

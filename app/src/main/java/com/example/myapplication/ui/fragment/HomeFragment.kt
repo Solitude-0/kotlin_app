@@ -7,43 +7,26 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.adapter.ListAdapter
+import com.example.myapplication.common.BaseFragment
 import com.example.myapplication.databinding.FragmentHomeBinding
 import com.example.myapplication.common.utils.SpUtils
+import com.example.myapplication.databinding.FragmentFunBinding
 import com.example.myapplication.model.ListViewModel
 import com.example.myapplication.model.LoginViewModel
 
-class HomeFragment : Fragment() {
-    private lateinit var viewModel: ListViewModel
-    private lateinit var adapter: ListAdapter
+class HomeFragment : BaseFragment<FragmentHomeBinding, ListViewModel>() {
 
-    private var _binding: FragmentHomeBinding? = null
-    private val binding get() = _binding!!
+    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentHomeBinding
+        get() = FragmentHomeBinding::inflate
+    override val viewModelClass: Class<ListViewModel>
+        get() = ListViewModel::class.java
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        adapter = ListAdapter()
-        viewModel = ViewModelProvider(this)[ListViewModel::class.java]
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        binding.recyclerView.adapter = adapter
-        viewModel.demo.observe(viewLifecycleOwner) { dataList ->
-            adapter.submitList(dataList)
-        }
-
-        binding.loginButton.setOnClickListener {
-            viewModel.getDataList(2)
-        }
-        return binding.root
+    override fun initEvent(binding: FragmentHomeBinding) {
+        super.initEvent(binding)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewModel.getDataList(null)
+    override fun initObserve(viewModel: ListViewModel) {
+        super.initObserve(viewModel)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }

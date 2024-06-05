@@ -33,6 +33,8 @@ android {
     sourceSets {
         getByName("main") {
             res.srcDirs(
+                    "src/main/res/drawable/component",
+                    "src/main/res/drawable/image",
                     "src/main/res/layout/common",
                     "src/main/res/layout/ui",
                     "src/main/res/layout/activity",

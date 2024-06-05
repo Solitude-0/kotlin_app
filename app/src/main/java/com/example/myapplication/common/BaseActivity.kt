@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.MotionEvent
+import android.view.Window
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
@@ -13,6 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
+import com.example.myapplication.R
 import com.example.myapplication.exception.GlobalExceptionHandler
 import kotlin.reflect.KClass
 
@@ -39,9 +41,13 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>(
         //透明状态栏
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
+
         } else {
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         }
+
+        window.statusBarColor = ContextCompat.getColor(this, R.color.mainBackground)
+
         initView(binding)
         initData(binding)
     }
@@ -51,7 +57,7 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel>(
     protected open fun initView(binding: VB) {}
 
     protected fun navigateToActivity(targetClass: Class<*>) {
-        val intent = Intent(this, targetClass)
+        val intent = Intent(application, targetClass)
         startActivity(intent)
         finish()
     }

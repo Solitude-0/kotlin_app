@@ -43,14 +43,18 @@ class SplashActivity : BaseActivity<SplashActivityBinding, LoginViewModel>(Login
                 val success = viewModel.login(username, password)
                 if (success) {
                     navigateToActivity(MainActivity::class.java)
+                } else {
+                    navigateToActivity(LoginActivity::class.java)
                 }
             }
         } else {
             handler = ToLoginActivityHandle(this)
             handler?.sendEmptyMessageDelayed(0, 2000)
         }
+
     }
 
+    @SuppressLint("HandlerLeak")
     inner class ToLoginActivityHandle(activity: SplashActivity) : Handler(Looper.getMainLooper()) {
         private var activity: WeakReference<SplashActivity> = WeakReference(activity)
         override fun handleMessage(msg: android.os.Message) {
